@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新規会員登録</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Optional: for better font appearance */
+            background-color: #f9f9f9; /* Optional: background color */
+        }
+        .container {
+            text-align: center; /* Center text inside the container */
+            padding: 20px;
+            border: 1px solid #ddd; /* Border for visibility */
+            border-radius: 8px; /* Rounded corners */
+            background-color: #fff; /* White background for the form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 400px; /* Limit width of the form */
+            width: 100%; /* Responsive width */
+        }
+        .container img {
+            width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 300px; /* Set a maximum width if needed */
+            margin-bottom: 0px; /* Space below the image */
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px; /* Space above and below labels */
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"] {
+            width: calc(100% - 20px); /* Full width minus padding */
+            padding: 10px;
+            margin-bottom: 15px; /* Space below inputs */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff; /* Blue background */
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px; /* Space around buttons */
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        a.button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #007bff;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        a.button-link:hover {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1></h1><br><br><br><br><br>       <!--to make sure top part of the image is not cut off-->
+        <img src="https://mykarute.com/img/bg-img/login.png" alt="Description of image"> <!-- link for image-->
+
+        <h1>新規会員登録</h1>
+
+        <form action="register.php" method="post">
+            <label for="fname">姓:</label>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="lname">名:</label>
+            <input type="text" id="lname" name="lname" required><br>
+
+            <label for="email">メールアドレス：</label>
+            <input type="tel" id="email" name="email" required><br>
+
+            <label for="pwd">パスワード:</label>
+            <input type="password" id="pwd" name="pwd" required><br>
+
+            <input type="submit" value="登録する">  
+        </form>
+
+        <a href="loginpage.html" class="button-link">ログイン</a>   <!-- directs to loginpage-->
+    </div>
+</body>
+</html>
